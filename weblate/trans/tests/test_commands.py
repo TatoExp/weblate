@@ -245,7 +245,7 @@ class ImportProjectTest(RepoTestCase):
             call_command(
                 "import_project",
                 project.slug,
-                f"weblate://{project.slug!s}/{android.slug!s}",
+                f"weblate://{project.slug}/{android.slug}",
                 "main",
                 "**/*.po",
             )

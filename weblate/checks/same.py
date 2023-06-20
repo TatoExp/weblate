@@ -106,10 +106,9 @@ def strip_string(msg, flags):
     stripped = PATH_RE.sub("", stripped)
 
     # Strip template markup
-    stripped = TEMPLATE_RE.sub("", stripped)
+    return TEMPLATE_RE.sub("", stripped)
 
     # Cleanup trailing/leading chars
-    return stripped
 
 
 def test_word(word, extra_ignore):
